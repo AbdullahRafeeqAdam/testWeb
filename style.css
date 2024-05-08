@@ -1173,3 +1173,26 @@ body {
   }
 }
  */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #424244;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8CA63C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8CA63C;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
