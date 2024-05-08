@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <nav>
+            <ul class="sidebar">
+                <div class="linkNav">
+                    <li onclick="hideSidebar()">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                                <path
+                                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#sec2" onclick="hideSidebar()">Idea</a></li>
+                    <li><a href="#sec3" onclick="hideSidebar()">Product</a></li>
+                    <li><a href="#main" onclick="hideSidebar()">Team</a></li>
+                    <li><a href="#sec6" onclick="hideSidebar()">Contact Us</a></li>
+                </div>
+            </ul>
+            <ul class="center-logo">
+                <li style="height: 80px; width: 250px;"><img src="logo.png" alt="Your Logo Here"
+                        style="height: 100%; width: 100%;"></li>
+            </ul>
+            <ul class="right-nav hideOnMobile">
+                <li><a href="#sec2">Idea</a></li>
+                <li><a href="#sec3">Product</a></li>
+                <li><a href="#main">Team</a></li>
+                <li><a href="#sec6">Contact Us</a></li>
+            </ul>
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"></path>
+                    </svg></a>
+            </li>
+        </nav>
+    </div>
+
+
+    <main>
+        <div id="sec1">
+            <video class="video-background" autoplay="" muted="" loop="" id="video-background" preload="auto">
+                <source src="welcome.mp4" type="video/mp4">
+            </video>
+            <div id="headings">
+                <h3 id="h3" class="headings">Floating Menu (dynamic<br>colour adjustment)</h3>
+                <h1 id="h1" class="headings">Introducing</h1>
+            </div>
+            <div id="circles">
+                <div class="round firstCircle"></div>
+                <div class="round secondCircle"></div>
+                <div class="round"></div>
+            </div>
+        </div>
+
+        <div id="sec2">
+            <video autoplay="" muted="" id="video-background-sec2" preload="auto">
+                <source src="product_black.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="sec2-content">
+                <div id="replay" onclick="replayVideo()" style="display: block;">
+                    <img src="replay.png" alt="">
+                    <h4>Replay</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <div id="sec3">
+        <div class="animated-item animate" id="one">
+            <h1 class="counter" data-target="30">30</h1>
+            <p style="top: 0;">seconds</p>
+            <br>
+            <h4 class="description">Fast production of <br> burger in around <br>30 seconds</h4>
+        </div>
+        <div class="animated-item animate" id="two">
+            <h1 class="counter" data-target="120">120</h1>
+            <p>burger/hour</p>
+            <br>
+            <h4 class="description">No breaks or getting <br>fatigued. Fast speed <br> around the clock</h4>
+        </div>
+        <div class="animated-item animate" id="three">
+            <h1 class="counter" data-target="4">4</h1>
+            <p>hours</p>
+            <br>
+            <h4 class="description">Peaces of mind with <br> a 4 hour SLA that <br> helps keep your <br>business
+                running</h4>
+        </div>
+    </div>
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container single">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div>
+                <h1>Single Machine</h1>
+            </div>
+            <div id="single-2">
+                <div id="sing">
+                    <img src="" alt="Your Picture Here">
+                </div>
+                <div>
+                    <h2>A single machine can easily <br> augment your burger making needs <br>to provide you the
+                        necessary hours. <br><br>High quality and consistency is key <br>to our product.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div>
+                <h1>Multiple Machine</h1>
+            </div>
+            <div id="single-2">
+                <div id="sing">
+                    <img src="" alt="Your Picture Here">
+                </div>
+                <div>
+                    <h2>A single machine can easily <br> augment your burger making needs <br>to provide you the
+                        necessary hours. <br><br>High quality and consistency is key <br>to our product.</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        <div class="nav-slider" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <!-- <br> -->
+
+    <!-- The dots/circles -->
+
+
+    <div class="journ">
+        <h2>Our Journey</h2>
+        <section class="timeline">
+            <ol>
+              <li>
+                <div>
+                  <time>June 2023</time><span>Journey Stars.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>August 2023</time><span>First prototype built to proof concept.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>November 2023</time><span>Next iteration produced to reduce machine to lower specs.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>February 2024</time><span>Company registered and first machine sent to be built.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>April 2024</time><span>Filed for patent and verson 2 of the machine triggered.</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1949</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                </div>
+              </li>
+          
+          </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div id="sec6">
+                <div class="sec">
+                    <div id="links">
+                        <a href="#sec2" style="color: antiquewhite;">Idea</a>
+                        <a href="#sec3" style="color: antiquewhite;">Product</a>
+                        <a href="#main" style="color: antiquewhite;">Team</a>
+                    </div>
+                    <div id="input">
+                        <input type="email" id="emailInput" placeholder="Enter your email">
+                        <button id="btn">Subscribe</button>
+                    </div>
+                </div>
+
+                <div id="address">
+                    <h4>Address <br><br>Sydney, <br> New South Wales, <br>Australia</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
